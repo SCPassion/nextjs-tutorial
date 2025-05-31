@@ -1,12 +1,11 @@
-import Image from "next/image";
+import Image from "next/image"; // extension of a normal image tag that optimizes images
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
+        <Image // size optimization, avoid layout shifts, lazy loading
+          src="https://plus.unsplash.com/premium_photo-1747375614453-bd5a94217a6e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Next.js logo"
           width={180}
           height={38}
@@ -14,7 +13,7 @@ export default function Home() {
         />
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
+            Get started by editing 11111
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
               app/page.tsx
             </code>
