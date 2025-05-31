@@ -18,7 +18,7 @@ async function makePostRequest() {
   return data;
 }
 
-export default function friendPage() {
+export default function FriendPage() {
   const [message, setMessage] = useState("");
   const onClick = async () => {
     const data = await makePostRequest();
