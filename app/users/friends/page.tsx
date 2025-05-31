@@ -1,5 +1,6 @@
-// ========================================== Client Component Version ==========================================
 "use client";
+
+// ========================================== Client Component Version ==========================================
 import { useState } from "react";
 
 async function makePostRequest() {
